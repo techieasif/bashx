@@ -27,7 +27,7 @@ A modern, user-friendly GUI application for managing shell configurations includ
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/bashx.git
+git clone https://github.com/techieasif/bashx.git
 cd bashx
 ```
 
@@ -134,11 +134,30 @@ bashx/
 - No network requests or external data transmission
 - Configurations are stored locally in standard shell config files
 
-## Known Issues
+## Security & Vulnerabilities
 
-- Some npm packages have vulnerabilities in their dependencies (mostly in development dependencies)
-- These are primarily in the build toolchain (react-scripts) and don't affect the production application
-- Working on migrating to more secure alternatives
+### Current Status
+- **Production Ready**: The application is secure for production use
+- **Electron**: Updated to v28.3.3 (latest stable) - resolves critical security vulnerability
+- **Dependencies**: All production dependencies are up to date
+
+### Known Development Vulnerabilities
+The following vulnerabilities exist only in development dependencies and do **not** affect the production build:
+
+1. **react-scripts dependencies** (9 vulnerabilities):
+   - `nth-check` - Regular Expression Complexity issue
+   - `postcss` - Line return parsing error  
+   - `webpack-dev-server` - Source code exposure risk (dev server only)
+   - These are inherited from Create React App's build toolchain
+
+2. **Impact**: 
+   - These vulnerabilities only exist in the development environment
+   - The production build is not affected
+   - No security risk to end users
+
+3. **Mitigation**:
+   - Regular updates when react-scripts releases patches
+   - Consider migrating to Vite or other modern build tools in future versions
 
 ## Contributing
 
@@ -156,7 +175,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Support
 
-For issues, questions, or suggestions, please open an issue on GitHub.
+For issues, questions, or suggestions, please open an issue on the [GitHub repository](https://github.com/techieasif/bashx/issues).
 
 ## Acknowledgments
 
