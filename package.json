@@ -1,0 +1,73 @@
+{
+  "name": "bashx",
+  "version": "1.0.0",
+  "description": "A GUI application for managing shell configurations",
+  "main": "electron/main.js",
+  "scripts": {
+    "start": "concurrently \"npm run react:start\" \"npm run electron:start\"",
+    "react:start": "BROWSER=none react-scripts start",
+    "electron:start": "wait-on http://localhost:3000 && electron .",
+    "react:build": "react-scripts build",
+    "electron:build": "electron-builder",
+    "build": "npm run react:build && npm run electron:build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "keywords": [
+    "shell",
+    "bash",
+    "configuration",
+    "gui"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.4",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "concurrently": "^7.6.0",
+    "electron": "^28.3.3",
+    "electron-builder": "^24.6.4",
+    "wait-on": "^7.0.1"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.16",
+    "@mui/material": "^5.14.17",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1"
+  },
+  "build": {
+    "appId": "com.bashx.app",
+    "productName": "BashX",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "electron/**/*",
+      "build/**/*",
+      "node_modules/**/*"
+    ],
+    "mac": {
+      "category": "public.app-category.developer-tools"
+    },
+    "linux": {
+      "target": "AppImage",
+      "category": "Development"
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

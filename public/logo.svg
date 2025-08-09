@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <!-- Shell gradient for seamless integration -->
+    <linearGradient id="shellGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#A8C4E6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#7FA9D9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5B8BC6;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Inner highlight gradient -->
+    <radialGradient id="innerGlow" cx="50%" cy="40%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:0.5" />
+      <stop offset="70%" style="stop-color:#A8C4E6;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#7FA9D9;stop-opacity:0" />
+    </radialGradient>
+    
+    <!-- Shadow filter -->
+    <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feFlood flood-color="#2E4578" flood-opacity="0.3"/>
+      <feComposite in2="offsetblur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Main shell shape with better integration -->
+  <g transform="translate(100, 100)">
+    <!-- Outer glow ring for depth -->
+    <circle cx="0" cy="0" r="75" fill="none" stroke="url(#shellGradient)" stroke-width="2" opacity="0.3"/>
+    <circle cx="0" cy="0" r="65" fill="none" stroke="url(#shellGradient)" stroke-width="3" opacity="0.5"/>
+    
+    <!-- Main shell body -->
+    <path d="M 0 -60 
+             C 30 -60, 50 -40, 50 -10
+             L 50 20
+             C 50 35, 40 40, 30 42
+             L 10 45
+             C 5 45, 0 45, 0 45
+             C 0 45, -5 45, -10 45
+             L -30 42
+             C -40 40, -50 35, -50 20
+             L -50 -10
+             C -50 -40, -30 -60, 0 -60 Z" 
+          fill="url(#shellGradient)" 
+          filter="url(#softShadow)"/>
+    
+    <!-- Shell fan ridges radiating from center -->
+    <g stroke="#FFFFFF" stroke-width="2" fill="none" opacity="0.4">
+      <path d="M 0 -45 L 0 25"/>
+      <path d="M 0 -45 L 15 20"/>
+      <path d="M 0 -45 L -15 20"/>
+      <path d="M 0 -45 L 25 15"/>
+      <path d="M 0 -45 L -25 15"/>
+      <path d="M 0 -45 L 35 5"/>
+      <path d="M 0 -45 L -35 5"/>
+    </g>
+    
+    <!-- Inner glow for depth -->
+    <ellipse cx="0" cy="-15" rx="35" ry="40" fill="url(#innerGlow)" opacity="0.6"/>
+    
+    <!-- Top highlight -->
+    <ellipse cx="0" cy="-40" rx="20" ry="10" fill="#FFFFFF" opacity="0.3"/>
+  </g>
+</svg>
