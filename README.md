@@ -1,7 +1,7 @@
 # 🐚 BashX - Modern Shell Configuration Manager
 
 <div align="center">
-  <img src="public/logo.svg" alt="BashX Logo" width="120" height="120">
+  <img src="https://raw.githubusercontent.com/techieasif/bashx/main/public/logo.svg" alt="BashX Logo" width="120" height="120">
   
   **A beautiful GUI application for managing shell configurations**
   
@@ -18,7 +18,7 @@
 BashX is a modern, user-friendly desktop application that makes managing shell configurations effortless. Whether you're working with bash, zsh, or fish, BashX provides an intuitive interface to manage aliases, environment variables, and PATH settings without manually editing configuration files.
 
 <div align="center">
-  <img src="screenshots/Screenshot 2025-08-09 at 11.25.02 AM.png" alt="BashX Main Interface" width="800">
+  <img src="screenshots/Screenshot%202025-08-09%20at%2011.25.02%20AM.png" alt="BashX Main Interface" width="800">
   <p><em>Clean, intuitive interface with Material Design</em></p>
 </div>
 
@@ -28,7 +28,7 @@ BashX is a modern, user-friendly desktop application that makes managing shell c
 Seamlessly switch between different shells with automatic configuration detection.
 
 <div align="center">
-  <img src="screenshots/Screenshot 2025-08-09 at 11.46.38 AM.png" alt="Shell Selection" width="800">
+  <img src="screenshots/Screenshot%202025-08-09%20at%2011.46.38%20AM.png" alt="Shell Selection" width="800">
   <p><em>Easy shell selection with configuration file preview</em></p>
 </div>
 
@@ -36,7 +36,7 @@ Seamlessly switch between different shells with automatic configuration detectio
 Create, edit, and organize shell aliases with a visual interface.
 
 <div align="center">
-  <img src="screenshots/Screenshot 2025-08-09 at 11.47.04 AM.png" alt="Alias Management" width="800">
+  <img src="screenshots/Screenshot%202025-08-09%20at%2011.47.04%20AM.png" alt="Alias Management" width="800">
   <p><em>Manage aliases with descriptions and instant testing</em></p>
 </div>
 
@@ -44,7 +44,7 @@ Create, edit, and organize shell aliases with a visual interface.
 Configure environment variables with validation and quick-add presets.
 
 <div align="center">
-  <img src="screenshots/Screenshot 2025-08-09 at 11.47.12 AM.png" alt="Environment Variables" width="800">
+  <img src="screenshots/Screenshot%202025-08-09%20at%2011.47.12%20AM.png" alt="Environment Variables" width="800">
   <p><em>Set environment variables with helpful presets</em></p>
 </div>
 
@@ -52,7 +52,7 @@ Configure environment variables with validation and quick-add presets.
 Visually manage PATH directories with drag-and-drop reordering.
 
 <div align="center">
-  <img src="screenshots/Screenshot 2025-08-09 at 11.47.19 AM.png" alt="PATH Management" width="800">
+  <img src="screenshots/Screenshot%202025-08-09%20at%2011.47.19%20AM.png" alt="PATH Management" width="800">
   <p><em>Organize PATH with priority control and quick-add options</em></p>
 </div>
 
@@ -60,7 +60,7 @@ Visually manage PATH directories with drag-and-drop reordering.
 Preview and validate changes before applying them to your shell.
 
 <div align="center">
-  <img src="screenshots/Screenshot 2025-08-09 at 11.47.35 AM.png" alt="Add Dialog" width="800">
+  <img src="screenshots/Screenshot%202025-08-09%20at%2011.47.35%20AM.png" alt="Add Dialog" width="800">
   <p><em>User-friendly dialogs with validation and testing</em></p>
 </div>
 
