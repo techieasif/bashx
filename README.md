@@ -224,8 +224,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 Need help? Have suggestions?
 
 - 📝 [Open an issue](https://github.com/techieasif/bashx/issues)
-- 💡 [Discussions](https://github.com/techieasif/bashx/discussions)
-- 📧 Contact: [your-email@example.com]
 
 ## 🙏 Acknowledgments
 
